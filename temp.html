@@ -61,28 +61,128 @@ footer {
     height: auto;
   }
 }
+
+.collapsible {
+  background-color: white;
+  color: #777;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: black;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+h6 {
+  font-size: 16px;
+  line-height: 0.25;
+}
+
+#a_header {
+  color: white
+}
+
+#a_body {
+  color: black
+}
+
 </style>
 </head>
 <body>
 
 <header>
+  <a  href="https://uncommonhacks.com" ><img id = "logo" src="images/faviconFilled.png"></a>
   <h2>Uncommon Hacks!</h2>
+  <h6>What are We All About?</h6> 		
+  <p>Founded in 2016, Uncommon Hacks is a weekend-long celebration of technology where college students from everywhere come to Chicago to make fun, 
+    random, and innovative tech-related projects with friends old and new. Every year, we work hard to create a hackathon where all are welcome, 
+    regardless of experience or background, and where outside-the-box projects and creative thinking are encouraged. For our fifth annual hackathon last winter, 
+    we hosted more than 200 of the brightest and most highly motivated students from Universities around the United States. You can get an idea of what goes on at 
+    Uncommon Hacks by checking out our recap video from 2019: <a href id = "a_header">https://youtu.be/p2X63fVdIIY</a>. 
+    </p>
+  
 </header>
 
 <section>
   <nav>
-    <p>Left Side Ifno</p>
+    <p>Location, Place, Survey</p>
   </nav>
   
   <article>
-    <h1>Welcome to the Uncommon Hacks Team Website!</h1>
-    <p>Body Info</p>
+    
+    <button type="button" class="collapsible">+ what's a hackathon?</button>
+    <div class="content">
+      <p>Hackathons are invention marathons where attendees collaborate on a project over the course of a weekend! hackers will be in a fun, supportive environment with the 
+        necessary tools provided to create excellent projects. Newbies are encouraged, normies aren't. This is a safe space to create the weirdest, quirkiest, and most 
+        amazing projects ever.
+        
+        University and high school students from anywhere are welcome, even if you're not a computer science major or have never been to a hackathon before! 
+        We've written a guide for first-time hackers available <a href="https://github.com/uncommonhacks/guide-virtual" id ="a_body">here</a>.
+        </p>
+    </div>
+    <button type="button" class="collapsible">+ when and how do I apply?</button>
+    <div class="content">
+      <p>Our applications will open the week of feb. 21 and will be due around two weeks later. check back on this website then, and follow our 
+        <a href="http://instagram.com/uncommonhacks" id ="a_body">instagram</a> and 
+        <a href="https://www.facebook.com/uncommonhacks" id ="a_body">facebook</a> for the latest updates!</p>
+    </div>
+    <button type="button" class="collapsible">+ who can apply?</button>
+    <div class="content">
+      <p>You can participate as long as you're a student (undergraduate or graduate) 18 years or older. If you are a new grad, we'd love to have you as well! 
+        We aim to be beginner-friendly, so all are welcome!</p>
+    </div>
+    <button type="button" class="collapsible">+ when and where is uncommon hacks?</button>
+    <div class="content">
+      <p></p>
+    </div>
+    <button type="button" class="collapsible">+ when and where is uncommon hacks?</button>
+    <div class="content">
+      <p></p>
+    </div>
+    
+
+
+    <p></p>
   </article>
 </section>
 
 <footer>
-  <p>Footer Info</p>
+  <h1> </h1>
 </footer>
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+  </script>
 
 </body>
 </html>
