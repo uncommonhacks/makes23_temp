@@ -23,7 +23,7 @@ header {
 
 nav {
   float: left;
-  width: 30%;
+  width: 50%;
   height: 300px;
   background: #ccc;
   padding: 20px;
@@ -37,7 +37,7 @@ nav ul {
 article {
   float: left;
   padding: 20px;
-  width: 70%;
+  width: 50%;
   background-color: #f1f1f1;
   height: 300px;
 }
@@ -85,14 +85,33 @@ footer {
   background-color: #f1f1f1;
 }
 
-p {
-  font-size: 14px;
-  line-height: 1.35;
+h2 {
+  font-size: 40px;
+  line-height: 0.25;
 }
 
-h6 {
-  font-size: 16px;
+h3 {
+  font-size: 25px;
   line-height: 0.25;
+  font-style: italic;
+  font-weight:normal;
+}
+
+h4 {
+  font-size: 15px;
+  line-height: 0.25;
+  font-weight:normal;
+}
+
+h5 {
+  font-size: 15px;
+  line-height: 0.25;
+  font-weight:normal;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.35;
 }
 
 #a_header {
@@ -109,57 +128,113 @@ h6 {
 
 <header>
   <a  href="https://uncommonhacks.com" ><img id = "logo" src="images/faviconFilled.png"></a>
-  <h2>Uncommon Hacks!</h2>
-  <h6>What are We All About?</h6> 		
-  <p>Founded in 2016, Uncommon Hacks is a weekend-long celebration of technology where college students from everywhere come to Chicago to make fun, 
+  <h2>Uncommon Hacks 2022</h2>
+    <h3>exploration awaits; build the future</h3>
+    <h4>April 1st - 3rd, crerar @ uchicago & the world wide web</h4>
+    <h5>[presurvey link]</h5>		
+  <p>
+    Uncommon Hacks 2022 will be held from April 1st - 3rd, 2022 through a hybrid format. All high school, undergraduate, or 
+    graduate students can participate, with no prior tech experience required - just a knack for building out some 
+    previously-unexplored ideas! Applications will open the week of Feb. 21. 
+    <br><br>
+    In the meantime, fill out our <a href = "https://docs.google.com/forms/d/e/1FAIpQLSfZ0wYrF6YvSVyLZwqFSWeFnX2dTCDvNjykDVzL8WJprxutkw/viewform" id = "a_header"> 
+    interest form</a> to receive the latest application updates! If you have other questions, feel free to email <a href =  "mailto:celery@uncommonhacks.com" id = "a_header">celery@uncommonhacks.com</a> or shoot us a 
+    <a href = "https://www.messenger.com/t/1129538927063790/?messaging_source=source%3Apages%3Amessage_shortlink" id = "a_header">facebook message</a>!
+  </p>
+
+
+  <h3>About</h3>	
+
+  <p>
+    Founded in 2016, Uncommon Hacks is a weekend-long celebration of technology where college students worldwide come to Chicago to make fun, 
     random, and innovative tech-related projects with friends old and new. Every year, we work hard to create a hackathon where all are welcome, 
-    regardless of experience or background, and where outside-the-box projects and creative thinking are encouraged. For our fifth annual hackathon last winter, 
-    we hosted more than 200 of the brightest and most highly motivated students from Universities around the United States. You can get an idea of what goes on at 
-    Uncommon Hacks by checking out our recap video from 2019: <a href id = "a_header">https://youtu.be/p2X63fVdIIY</a>. 
-    </p>
+    regardless of experience or background, and where outside-the-box projects and creative thinking are encouraged. For our sixth annual hackathon 
+    last spring, we hosted over 200 of the brightest and most motivated students from universities around the world. You can get an idea of what goes 
+    on at Uncommon Hacks by checking out our <a href = "https://youtu.be/p2X63fVdIIY" id = "a_header">recap video from 2019</a>.
+  </p>
   
 </header>
 
 <section>
   <nav>
-    <p>Location, Place, Survey</p>
+    <button type="button" class="collapsible">+ what's a hackathon?</button>
+    <div class="content">
+      <p>Hackathons are invention marathons where attendees collaborate on a project over the course of a weekend! Hackers will be in a fun, supportive 
+        environment with the necessary tools and mentorship provided to create weird, quirky, and amazing projects that creatively explore new ideas 
+        with code or solve unconventional problems.
+        
+        University and high school students from anywhere are welcome, even if you're not a computer science major or have never been to a hackathon 
+        before! We've written a guide for first-time hackers available <a href="https://github.com/uncommonhacks/guide-virtual" id ="a_body">here</a>.
+        </p>
+    </div>
+    <button type="button" class="collapsible">+ how do I apply?</button>
+    <div class="content">
+      <p>Regular applications open on the week of Feb. 21 and will be due around two weeks later. 
+        Applications are accepted on a rolling basis. You can participate as long as you're a student 
+        enrolled in a high school or university, or you have graduated within the last 12 months. 
+        We aim to be beginner-friendly, so all are welcome! Check back on this website then, and
+        follow our <a href="http://instagram.com/uncommonhacks" id ="a_body">instagram</a> and 
+        <a href="https://www.facebook.com/uncommonhacks" id ="a_body">facebook</a> for the latest updates!
+      </p>
+    </div>
+    <button type="button" class="collapsible">+ when and where is Uncommon Hacks?</button>
+    <div class="content">
+      <p>April 1st - 3rd, 2022 -- HYBRID
+
+        <br><br>
+
+        HYBRID: If you're a UChicago student, you're welcome to attend the event in-person. 
+        Non-UChicago students unfortunately will not be allowed to attend the event in-person, 
+        though all are open to attend the hackathon virtually. The same programming will be available 
+        for both in-person and virtual participants, so don't fret either way! 
+        
+        <br><br>
+
+        WHERE: If you're attending in-person, we'll be having an assortment of in-person events 
+        on the UChicago campus, as well as some virtual events. Details of locations and times will 
+        be sent to in-person participants in advance. If attending virtually, all links and info will
+        be included in our hacker guide, which will be sent out before the event begins. We anticipate 
+        using Gather.Town and Discord for all hackers!
+
+        <br><br>
+
+        Uncommon Hacks is free to attend. We will not offer travel reimbursement. If you're participating 
+        virtually, the only traveling you'll be doing is to our Gather.Town...for which you'll be reimbursed 
+        with e-love.
+
+        </p>
+      </div>
+    <p></p>
   </nav>
   
   <article>
-    
-    <button type="button" class="collapsible">+ what's a hackathon?</button>
+    <button type="button" class="collapsible">+ what does the application process and timeline look like?</button>
     <div class="content">
-      <p>Hackathons are invention marathons where attendees collaborate on a project over the course of a weekend! hackers will be in a fun, supportive environment with the 
-        necessary tools provided to create excellent projects. Newbies are encouraged, normies aren't. This is a safe space to create the weirdest, quirkiest, and most 
-        amazing projects ever.
+      <p>The process starts out with the hackathon application, which consists of basic demographic questions 
+        as well as a few ~mystery~ short answer ones. The Uncommon Hacks team will be reviewing the applications 
+        in waves, and you will be notified via email with the result of your application. If you've been accepted, 
+        you will have an RSVP link to complete as confirmation of your attendance. from there, you're all set - 
+        see you on our adventure!
+      </p>
+    </div>
+    <button type="button" class="collapsible">+ what can I make and who can I work with?</button>
+    <div class="content">
+      <p>You are encouraged to work in teams of up to four (4) people! Collaborating with hackers across 
+        different schools is especially welcome. We will offer plenty of opportunities for you to meet new 
+        people and make teams. 
+
+        <br><br>
         
-        University and high school students from anywhere are welcome, even if you're not a computer science major or have never been to a hackathon before! 
-        We've written a guide for first-time hackers available <a href="https://github.com/uncommonhacks/guide-virtual" id ="a_body">here</a>.
-        </p>
+        Our hackers created the most whimsical projects from 3D music visualizer to Pokémon cards producer. 
+        Check out our 2021 winning project gallery <a href="https://uncommon-hacks-2021.devpost.com/project-gallery" id = "a_body">here</a>.</p>
     </div>
-    <button type="button" class="collapsible">+ when and how do I apply?</button>
+    <button type="button" class="collapsible">+ what if I'm new to coding?</button>
     <div class="content">
-      <p>Our applications will open the week of feb. 21 and will be due around two weeks later. check back on this website then, and follow our 
-        <a href="http://instagram.com/uncommonhacks" id ="a_body">instagram</a> and 
-        <a href="https://www.facebook.com/uncommonhacks" id ="a_body">facebook</a> for the latest updates!</p>
+      <p>We welcome everyone to apply, regardless of your background in tech! Even if you have limited 
+        coding or technical experience, we will have plenty of talks and workshops scheduled to introduce 
+        you to a plethora of different tools and technologies. We will also have mentors available throughout 
+        the weekend to help out if you ever get stuck or run out of ideas.</p>
     </div>
-    <button type="button" class="collapsible">+ who can apply?</button>
-    <div class="content">
-      <p>You can participate as long as you're a student (undergraduate or graduate) 18 years or older. If you are a new grad, we'd love to have you as well! 
-        We aim to be beginner-friendly, so all are welcome!</p>
-    </div>
-    <button type="button" class="collapsible">+ when and where is uncommon hacks?</button>
-    <div class="content">
-      <p></p>
-    </div>
-    <button type="button" class="collapsible">+ when and where is uncommon hacks?</button>
-    <div class="content">
-      <p></p>
-    </div>
-    
-
-
-    <p></p>
   </article>
 </section>
 
