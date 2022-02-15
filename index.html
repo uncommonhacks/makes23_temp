@@ -17,6 +17,31 @@ button {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.button {
+  border: none;
+  color: white;
+  padding: 8px 64px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid black;
+  border-radius: 8px;
+}
+
+.button1:hover {
+  background-color: black;
+  color: white;
+}
+
 header {
   background-color: #666;
   padding: 50px;
@@ -121,8 +146,43 @@ p {
   color: white
 }
 
+#a_header:link {
+ text-decoration: none;
+ font-weight: bold;
+}
+
+#a_header:hover {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 #a_body {
   color: black
+}
+
+#a_body:link {
+ text-decoration: none;
+}
+
+#a_body:hover {
+  color: white;
+  font-weight: bold;
+}
+
+#a_button { 
+  color: rgb(94, 94, 94)
+}
+
+#a_button:link {
+ text-decoration: none;
+ font-weight: bold;
+}
+
+#a_button:hover {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 body {
@@ -139,7 +199,7 @@ body {
   <h2>Uncommon Hacks 2022</h2>
     <h3>exploration awaits; build the future</h3>
     <h4>April 1st - 3rd, crerar @ uchicago & the world wide web</h4>
-    <h5>Interest Form Coming Soon...</h5>		
+    <button class="button button1"><a href = "https://form.typeform.com/to/M5BOaWpK" id="a_button">Click Here for the Interst Form!</a></button>
   <p>
     Uncommon Hacks 2022 will be held from April 1st - 3rd, 2022 through a hybrid format. All high school, undergraduate, or 
     graduate students can participate, with no prior tech experience required - just a knack for building out some 
