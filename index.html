@@ -10,41 +10,43 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Avenir, sans-serif;
 }
 
 button {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Avenir, sans-serif;
 }
 
 .button {
   border: none;
   color: white;
-  padding: 8px 64px;
+  padding: 1rem 4rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
-  transition-duration: 0.4s;
+  transition-duration: 0.2s;
   cursor: pointer;
 }
 
 .button1 {
   background-color: white; 
-  color: black; 
-  border: 2px solid black;
-  border-radius: 8px;
+  color: rgb(0, 100, 100);
+  margin-top: 2rem;
+  border-radius: 2rem;
 }
 
 .button1:hover {
-  background-color: black;
+  background-color: rgb(0, 163, 163);
   color: white;
 }
 
 header {
-  background-color: #666;
-  padding: 50px;
+  background-image: url("images/hacks22_banner.png");
+  background-size: cover;
+  background-blend-mode: darken;
+  padding: 5rem 8vw 3.5rem;
   text-align: center;
   font-size: 35px;
   color: white;
@@ -53,20 +55,19 @@ header {
 nav {
   float: left;
   width: 50%;
-  background: #ccc;
-  padding: 20px;
+  padding: 0 2vw;
   
 }
 
 article {
   float: left;
-  padding: 20px;
+  padding: 0 2vw;
   width: 50%;
-  background-color: #ccc;;
 }
 
 section {
-  background: #ccc;
+  background: rgb(146, 187, 187);
+  padding: 2rem 3vw;
 }
 
 section::after {
@@ -77,7 +78,7 @@ section::after {
 }
 
 footer {
-  background-color: #777;
+  background-color: rgb(58, 77, 82);
   padding: 10px;
   text-align: center;
   color: white;
@@ -103,31 +104,48 @@ footer {
 }
 
 .active, .collapsible:hover {
-  background-color: black;
+  background-color: rgb(31, 31, 31);
   color: white;
 }
 
 .content {
   padding: 0 18px;
-  background-color: rgba(194, 194, 194, 0.8);
+  background-color: rgb(255, 255, 255, 0.8);
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
 
+.info-text {
+    display: inline-block;
+    margin: 3rem auto 1rem;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.bullet {
+    color: teal;
+    font-weight: bold;
+    margin-right: 0.25rem;
+}
+
 h2 {
-  font-size: 40px;
+   margin: 0;
+   margin-top: 1.5rem;
+   font-size: 50px;
 }
 
 h3 {
   font-size: 25px;
-  font-style: italic;
   font-weight:normal;
 }
 
 h4 {
-  font-size: 15px;
+  font-size: 18px;
   font-weight:normal;
+  margin: 0.75rem;
 }
 
 h5 {
@@ -137,13 +155,13 @@ h5 {
 }
 
 p {
-  font-size: 15px;
-  line-height: 1.35;
+  font-size: 16px;
+  line-height: 1.5;
   text-align: left;
 }
 
 #a_header {
-  color: white
+  color: rgb(163, 219, 219)
 }
 
 #a_header:link {
@@ -152,7 +170,7 @@ p {
 }
 
 #a_header:hover {
-  color: black;
+  color: rgb(116, 180, 180);
   font-weight: bold;
   text-decoration: none;
 }
@@ -170,6 +188,11 @@ p {
   font-weight: bold;
 }
 
+#slogan {
+  font-style: italic;
+  color: rgb(163, 219, 219);
+}
+
 body {
   margin: 0;
   background-color: #666;
@@ -182,10 +205,12 @@ body {
 <header>
   <a  href="https://uncommonhacks.com" ><img id = "logo" src="images/faviconFilled.png"></a>
   <h2>Uncommon Hacks 2022</h2>
-    <h3>exploration awaits; build the future</h3>
-    <h4>April 1st - 3rd, crerar @ uchicago & the world wide web</h4>
+    <h3 id="slogan">exploration awaits; build the future</h3>
+    
+    <h4>crerar @ uchicago & the world wide web</h4>
+    <h4>April 1st - 3rd</h4>
     <button class="button button1" onclick="location.href='https://form.typeform.com/to/M5BOaWpK';"><b>Complete our Presurvey!</b></button>
-  <p>
+  <p class="info-text">
     Uncommon Hacks 2022 will be held from April 1st - 3rd, 2022 through a hybrid format. All high school, undergraduate, or 
     graduate students can participate, with no prior tech experience required - just a knack for building out some 
     previously-unexplored ideas! Applications will open the week of Feb. 21. 
@@ -196,7 +221,7 @@ body {
   </p>
 
 
-  <h3>About</h3>	
+  <h3 class="bold">About</h3>	
 
   <p>
     Founded in 2016, Uncommon Hacks is a weekend-long celebration of technology where college students worldwide come to Chicago to make fun, 
@@ -205,12 +230,12 @@ body {
     last spring, we hosted over 200 of the brightest and most motivated students from universities around the world. You can get an idea of what goes 
     on at Uncommon Hacks by checking out our <a href = "https://youtu.be/p2X63fVdIIY" id = "a_header">recap video from 2019</a>.
   </p>
-  
+
 </header>
 
 <section>
   <nav>
-    <button type="button" class="collapsible">+ what's a hackathon?</button>
+    <button type="button" class="collapsible"><span class="bullet">+</span> what's a hackathon?</button>
     <div class="content">
       <p>Hackathons are invention marathons where attendees collaborate on a project over the course of a weekend! Hackers will be in a fun, supportive 
         environment with the necessary tools and mentorship provided to create weird, quirky, and amazing projects that creatively explore new ideas 
@@ -220,7 +245,7 @@ body {
         before! We've written a guide for first-time hackers available <a href="https://github.com/uncommonhacks/guide-virtual" id ="a_body">here</a>.
         </p>
     </div>
-    <button type="button" class="collapsible">+ how do I apply?</button>
+    <button type="button" class="collapsible"><span class="bullet">+</span> how do I apply?</button>
     <div class="content">
       <p>Regular applications open on the week of Feb. 21 and will be due around two weeks later. 
         Applications are accepted on a rolling basis. You can participate as long as you're a student 
@@ -230,7 +255,7 @@ body {
         <a href="https://www.facebook.com/uncommonhacks" id ="a_body">facebook</a> for the latest updates!
       </p>
     </div>
-    <button type="button" class="collapsible">+ when and where is Uncommon Hacks?</button>
+    <button type="button" class="collapsible"><span class="bullet">+</span> when and where is Uncommon Hacks?</button>
     <div class="content">
       <p>April 1st - 3rd, 2022 — HYBRID
 
@@ -261,7 +286,7 @@ body {
   </nav>
   
   <article>
-    <button type="button" class="collapsible">+ what does the application process and timeline look like?</button>
+    <button type="button" class="collapsible"><span class="bullet">+</span> what does the application process and timeline look like?</button>
     <div class="content">
       <p>The process starts out with the hackathon application, which consists of basic demographic questions 
         as well as a few ~mystery~ short answer ones. The Uncommon Hacks team will be reviewing the applications 
@@ -270,7 +295,7 @@ body {
         see you on our adventure!
       </p>
     </div>
-    <button type="button" class="collapsible">+ what can I make and who can I work with?</button>
+    <button type="button" class="collapsible"><span class="bullet">+</span> what can I make and who can I work with?</button>
     <div class="content">
       <p>You are encouraged to work in teams of up to four (4) people! Collaborating with hackers across 
         different schools is especially welcome. We will offer plenty of opportunities for you to meet new 
@@ -281,7 +306,7 @@ body {
         Our hackers created the most whimsical projects from 3D music visualizer to Pokémon cards producer. 
         Check out our 2021 winning project gallery <a href="https://uncommon-hacks-2021.devpost.com/project-gallery" id = "a_body">here</a>.</p>
     </div>
-    <button type="button" class="collapsible">+ what if I'm new to coding?</button>
+    <button type="button" class="collapsible"><span class="bullet">+</span> what if I'm new to coding?</button>
     <div class="content">
       <p>We welcome everyone to apply, regardless of your background in tech! Even if you have limited 
         coding or technical experience, we will have plenty of talks and workshops scheduled to introduce 
